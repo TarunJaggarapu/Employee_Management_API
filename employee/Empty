@@ -1,0 +1,25 @@
+sudo apt install nodejs
+sudo apt install npm
+npm install --legacy-peer-deps
+npm run build
+sudo apt install apache2
+suod mv build/* /var/www/html
+sudo systemctl restart apache2
+cd /var/www/html
+sudo rm index.html
+cd
+mkdir CDS
+sudo mv CDS /var/www/html
+(upload all files to ssh it will show at home)
+sudo mv index.html data.php index.js slider.js style.css image2.png qi.jpg select.html selct.css select.js /var/www/html
+sudo mv data.php gc-aw-az.png questions.js script.js select.html stylePage.css /var/www/html/CDS
+sudo apt-get install php
+sudo apt install mariadb-server(sql server)
+sudo apt update
+sudo apt install phpmyadmin  (used for hosting database later changed to cloud sql)
+sudo ln -s /usr/share/phpmyadmin /var/www/html
+sudo systemctl restart apache2
+cd /var/www/html/CDS
+sudo nano data.php  ("cloud sql public ip address","username","password") cntrl s, cntrl x
+In cloud sql , connections , authorised networks, add the name and public ip of vm that you hosted webapp.
+and create a user 
