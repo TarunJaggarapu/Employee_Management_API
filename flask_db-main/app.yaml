@@ -1,0 +1,12 @@
+runtime: python37
+
+env_variables:
+  DB_USER: root
+  DB_PASSWORD: team
+  DB_HOST: 10.81.32.3
+  DB_DATABASE: employee
+  raise_on_warnings: True
+  CORS_VAL: 10.128.0.2
+
+vpc_access_connector:
+  name: "projects/qwiklabs-gcp-04-6c85641d1d36/locations/us-central1/connectors/connect-to-sql"
